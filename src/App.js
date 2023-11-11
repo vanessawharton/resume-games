@@ -1,18 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Resume Games
-        </a>
+        <h1>Resume Games</h1>
+        <div>
+          Wordle
+        </div>
+        <div>
+          Crossword
+        </div>
+        <div>
+          Connections
+        </div>
       </header>
     </div>
   );
