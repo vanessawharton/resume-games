@@ -6,6 +6,7 @@ import './WordlePage.css';
 function WordlePage() {
     return (
         <div>
+            This is the wordle page
             <Box
                 sx={{
                     margin: 'auto',
