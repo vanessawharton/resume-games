@@ -1,41 +1,106 @@
 import React, { useState } from 'react';
 import './WordlePage.css';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Unstable_Grid2';
+
+const Item = styled(Paper)(({ theme }) => ({
+        backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+        ...theme.typography.body2,
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+    }));
 
 
 function WordlePage() {
     return (
         <div className="word-board">
-            Test
-        <div class="wordle-letter" id="letter-0"></div>
-        <div class="wordle-letter" id="letter-1"></div>
-        <div class="wordle-letter" id="letter-2"></div>
-        <div class="wordle-letter" id="letter-3"></div>
-        <div class="wordle-letter" id="letter-4"></div>
-        <div class="wordle-letter" id="letter-5"></div>
-        <div class="wordle-letter" id="letter-6"></div>
-        <div class="wordle-letter" id="letter-7"></div>
-        <div class="wordle-letter" id="letter-8"></div>
-        <div class="wordle-letter" id="letter-9"></div>
-        <div class="wordle-letter" id="letter-10"></div>
-        <div class="wordle-letter" id="letter-11"></div>
-        <div class="wordle-letter" id="letter-12"></div>
-        <div class="wordle-letter" id="letter-13"></div>
-        <div class="wordle-letter" id="letter-14"></div>
-        <div class="wordle-letter" id="letter-15"></div>
-        <div class="wordle-letter" id="letter-16"></div>
-        <div class="wordle-letter" id="letter-17"></div>
-        <div class="wordle-letter" id="letter-18"></div>
-        <div class="wordle-letter" id="letter-19"></div>
-        <div class="wordle-letter" id="letter-20"></div>
-        <div class="wordle-letter" id="letter-21"></div>
-        <div class="wordle-letter" id="letter-22"></div>
-        <div class="wordle-letter" id="letter-23"></div>
-        <div class="wordle-letter" id="letter-24"></div>
-        <div class="wordle-letter" id="letter-25"></div>
-        <div class="wordle-letter" id="letter-26"></div>
-        <div class="wordle-letter" id="letter-27"></div>
-        <div class="wordle-letter" id="letter-28"></div>
-        <div class="wordle-letter" id="letter-29"></div>
+            <div>
+                <center>
+                    WORDLE
+                </center>
+            </div>
+            <Box sx={{ margin: "auto", width: 300, height: 500, display:"flex", alignItems:"center" }}>
+            <Grid container spacing={0.5} columns={11}>
+                <Grid xs={2}>
+                    <Item>1</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>2</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>3</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>4</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>5</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>6</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>7</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>8</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>9</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>10</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>11</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>12</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>13</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>14</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>15</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>16</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>17</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>18</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>19</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>20</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>21</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>22</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>23</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>24</Item>
+                </Grid>
+                <Grid xs={2}>
+                    <Item>25</Item>
+                </Grid>
+            </Grid>
+            </Box>
         </div>
     );
 }
