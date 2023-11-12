@@ -16,18 +16,9 @@ import WordlePage from './Wordle/WordlePage';
 function App() {
 
   return (
-    <Router>
       <div>
-        {/* <Header /> */}
-        Hello!
-        <Routes>
-
-          <Route exact path="/wordle" element={<WordlePage />} />
-          
-        </Routes>
-        {/* <Footer /> */}
+        <WordlePage />
       </div>
-    </Router>
   );
 }
 
