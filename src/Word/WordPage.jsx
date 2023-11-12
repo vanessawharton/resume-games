@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './WordlePage.css';
+import './WordPage.css';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -14,7 +14,7 @@ const Item = styled(Paper)(({ theme }) => ({
     }));
 
 
-function WordlePage() {
+function WordPage() {
     return (
         <div className="word-board">
             <div>
@@ -105,4 +105,4 @@ function WordlePage() {
     );
 }
 
-export default WordlePage;
+export default WordPage;

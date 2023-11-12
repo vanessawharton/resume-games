@@ -9,7 +9,7 @@ import {
 
 // import Header from '../Header/Header';
 // import Footer from '../Footer/Footer';
-import WordlePage from './Wordle/WordlePage';
+import WordPage from './Word/WordPage';
 // import CrosswordPage from '../CrosswordPage/CrosswordPage';
 // import ConnectionsPage from '../ConnectionsPage/ConnectionsPage';
 
@@ -17,7 +17,7 @@ function App() {
 
   return (
       <div>
-        <WordlePage />
+        <WordPage />
       </div>
   );
 }
