@@ -10,7 +10,7 @@ import {
 
 // import Header from '../Header/Header';
 // import Footer from '../Footer/Footer';
-// import WordlePage from '../WordlePage/WordlePage';
+import WordlePage from '../Wordle/WordlePage';
 // import CrosswordPage from '../CrosswordPage/CrosswordPage';
 // import ConnectionsPage from '../ConnectionsPage/ConnectionsPage';
 
@@ -24,11 +24,11 @@ function App() {
           {/* Visiting localhost:3000 will redirect to localhost:3000/home */}
           <Redirect exact from="/" to="/home" />
 
-          {/* <Route exact path="/wordle">
+          <Route exact path="/wordle">
             <WordlePage />
           </Route>
           
-          <Route exact path="/crossword">
+          {/* <Route exact path="/crossword">
             <CrosswordPage />
           </Route>
           
